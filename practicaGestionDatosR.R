@@ -30,7 +30,7 @@ matriz_excavaciones <- matrix(
 colnames(matriz_excavaciones) <- c("sitio1","sitio2","sitio3","sitio4","sitio5")
 rownames(matriz_excavaciones) <- c(1987,1980,1990)
 año_max_excavaciones <- colnames(matriz_excavaciones)[
-  which.max(colSums(matriz_excavaciones))]
+  which.max(rowSums(matriz_excavaciones))]
 print(año_max_excavaciones)
 
 #Ejercicio 7
